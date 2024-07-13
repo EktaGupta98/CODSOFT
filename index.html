@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/368db9c2c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="mename.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">My Services</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </nav>
+       
+            <div class="header_text">
+                <p>WEB DEVELOPER</p>
+                <h1>
+                    Hello Everyone,I am <span>Ekta.</span><br>I currently pursuing B.tech from Delhi.<br>
+                    I am a web developer enthusiast.
+                </h1>
+                <div class="image">
+                <img src="photo.jpg">
+  
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="me.jpg">
+            </div>
+               <div class="about-col-2">
+                <h1 class="sub-title">ABOUT ME</h1>
+                <p>Greetings,My name is Ekta.I just completed my first year of college.MY first year
+                    was great mainly I explore the delhi as much as I can.Now i am working on 
+                    languages like java and c++ doing web development and data structure side
+                    by side.I doing dsa questions on platforms like coding ninjas,leetcode
+                    and geeks for geeks.I prsctice web deelopment on vs code learning from 
+                    Love Babbar and geeks for geeks site.I am the first one doing btech.
+                </p>
+                <div class="tab_titles">
+                    <p class="tab_links active_link"onclick="opentab('skills')">SKILLS</p>
+                    <p class="tab_links"onclick="opentab('experience')">EXPERIENCE</p>
+                    <p class="tab_links"onclick="opentab('education')">EDUCATION</p>
+                </div>
+                <div class="tab_contents activetab"id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Java</span><br>Making java projects</li>
+                        <li><span>Video-Editing</span><br>Edit Videos</li>
+                    </ul>
+                </div>
+                <div class="tab_contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>Internships as a python programmer</li>
+                        <li><span>2023</span><br>DSA ques from past 1 year</li>
+                    </ul>
+                </div>
+                <div class="tab_contents" id="education">
+                    <ul>
+                        <li><span>Btech</span><br>Netaji Subas University Of Technology</li>
+                        <li><span>12th</span><br>A.V.I.P.S</li>
+                        <li><span>10th</span><br>A.V.I.P.S</li>
+                    </ul>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!--------services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                 <div>
+                    <h2>Web Design</h2>
+                    <p>Web design is the creation of websites and pages to reflect a company's brand and information and ensure a user-friendly experience. Appearance and design are incorporated as vital elements whether you're designing a website, mobile app or maintaining content on a web page.</p>
+                     <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>App Design</h2>
+                    <p>App design is the look and feel of a mobile application. This includes all of the visual elements and interactive elements that impact how the app functions. Mobile app design combines two concepts—UI and UX.</p>
+                     <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Graphic Design</h2>
+                    <p>Graphic designers develop visual branding elements such as logos, color palettes, typography, and brand guidelines that reflect a company's identity, values, and personality</p>
+                     <a href="#">Learn more</a>
+                </div>
+        </div>
+    </div>
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>contact@example.com</p>
+                <p>0123456789</p>
+            
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name"required>
+                        <br>
+                        <br>
+                        <input type="email" name="email" placeholder="Your Email"required>
+                        <br>
+                        <br>
+                        <textarea name="Message"rows="6"placeholder="your message"></textarea>
+                        <br>
+                        <br>
+                            <button type="submit">Submit</button>
+                            <br>
+                            <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab_links");
+        var tabcontents=document.getElementsByClassName("tab_contents");
+        function opentab(tabname){
+                  for(tablink of tablinks){
+                    tablink.classList.remove("active_link")
+                  }
+                  for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("activetab")
+                  }
+                  event.currentTarget.classList.add("active_link");
+                  document.getElementById(tabname).classList.add("activetab")
+        }
+    </script>
+</body>
+</html>
